@@ -16,6 +16,9 @@ document.getElementById('add')
     data.push(document.getElementById('task').value);
     console.log(data);
     localStorage.setItem('task', JSON.stringify(data)); //データを保存
+    // taskの入力欄クリア
+    document.getElementById('task').value ="";
+
   }
 );
 
